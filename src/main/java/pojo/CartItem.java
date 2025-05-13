@@ -1,7 +1,5 @@
 package pojo;
 import lombok.*;
-
-@Component
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter

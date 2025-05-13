@@ -2,7 +2,6 @@ package pojo;
 import lombok.*;
 import java.sql.Timestamp;
 
-@Component
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter

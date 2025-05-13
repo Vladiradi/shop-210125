@@ -2,7 +2,6 @@ package pojo;
 import lombok.*;
 import java.math.BigDecimal;
 
-@Component
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
@@ -16,4 +15,4 @@ public class OrderItem {
     private Long productId;
     private Integer quantity;
     private BigDecimal priceAtPurchase;
-}}
+}

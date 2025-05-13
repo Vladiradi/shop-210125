@@ -1,8 +1,6 @@
 package pojo;
 import lombok.*;
-import org.springframework.stereotype.Component;
 
-@Component
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
