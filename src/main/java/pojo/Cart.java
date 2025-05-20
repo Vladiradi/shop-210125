@@ -9,7 +9,7 @@ import lombok.*;
 @EqualsAndHashCode
 @Builder
 
-public class Card {
+public class Cart {
     private Long cardId;
     private Long userId;
 }
