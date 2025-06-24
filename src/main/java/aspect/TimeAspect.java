@@ -4,6 +4,7 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.data.domain.AfterDomainEventPublication;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -29,6 +30,11 @@ public class TimeAspect {
                 .map(a -> a.toString())
                 .collect(Collectors.joining(","));
         log.info("before..." + joinPoint.toString() + ", args=[" + args + "]");args);
+    }
+
+    @After("callAtUserControllerPublic()")
+    public void afterCallAt(JoinPoint joinPoint) {
+        log.info(".....end....."+ joinPoint.toString()+".....time....." + LocalDateTime.now());
     }
 
 }
